@@ -3,8 +3,7 @@ import Navbar from "../../Component/navbar";
 import MultipleItems from "../../Component/slider";
 import Team from "../../Component/Team";
 import Footer from "../../Component/footer";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 function Home() {
   return (
     <>

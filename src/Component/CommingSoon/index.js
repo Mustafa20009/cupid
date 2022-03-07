@@ -4,7 +4,7 @@ import Headertext from "../../assets/Text.png";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaDiscord } from "react-icons/fa";
 
-const Main = ({ style }) => {
+const Main = ({ styles }) => {
   return (
     <div className="bg-[#FFC4E2] pt-5 pb-20">
       <div className=" bg-[#FFC4E2] flex justify-end container	">
@@ -12,7 +12,7 @@ const Main = ({ style }) => {
         <FaDiscord size={30} className="text-white" />
       </div>
       <div
-        className={` bg-[#FFC4E2] flex flex-col items-center justify-center pt-10 ${style}`}
+        className={` bg-[#FFC4E2] flex flex-col items-center justify-center pt-10 ${styles}`}
       >
         <div>
           <img src={Logo} alt="Logo" className="h-[100px] " />
