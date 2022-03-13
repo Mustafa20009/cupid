@@ -3,30 +3,48 @@ import Navbar from "../../Component/navbar";
 import MultipleItems from "../../Component/slider";
 import Team from "../../Component/Team";
 import Footer from "../../Component/footer";
+import Background1 from "../../assets/home/1-min.jpg";
+import Background2 from "../../assets/home/2-min.png";
+import Image1 from "../../assets/image/4x/home-logo-min.png";
+import Image2 from "../../assets/image/4x/speek-the-truth-min.png";
+import Image3 from "../../assets/image/4x/building-min.png";
+import Image4 from "../../assets/image/4x/ai-min.png";
+import Image5 from "../../assets/image/4x/media-min.png";
+import Image6 from "../../assets/image/4x/concept-min.png";
+import Image7 from "../../assets/image/4x/road-min.png";
+import Image8 from "../../assets/image/4x/rocket-min.png";
+import Slider1 from "../../assets/image/slider/1-min.png";
+import Slider2 from "../../assets/image/slider/2-min.png";
+import Slider3 from "../../assets/image/slider/3-min.png";
+import Slider4 from "../../assets/image/slider/4-min.png";
+import Slider5 from "../../assets/image/slider/6-min.png";
+import Slider6 from "../../assets/image/slider/6-min.png";
 
 function Home() {
   return (
     <>
-      <div className="flex flex-col w-full h-[100vh] bg-home-1 items-center bg-cover bg-no-repeat bg-center">
+      <div
+        className="flex flex-col w-full h-[100vh]  items-center bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: `url(${Background1})` }}
+      >
         <Navbar />
         <div className="w-full flex items-center justify-center flex-col my-auto pt-40">
-          <img src="/image/4x/home-logo.png" className="w-[800px]" alt="" />
-          <img
-            src="/image/4x/speek-the-truth.png"
-            className="w-[300px] mt-5"
-            alt=""
-          />
+          <img src={Image1} className="w-[800px]" alt="" />
+          <img src={Image2} className="w-[300px] mt-5" alt="" />
           <button className="bg-transparent font-bold italic border text-white text-3xl px-20 py-3 hover:bg-white hover:text-black transition-all cursor-pointer">
             MINT
           </button>
         </div>
         <img
-          src="/image/4x/building.png"
+          src={Image3}
           className="mt-auto h-[45%] object-stretch w-full"
           alt=""
         />
       </div>
-      <div className="flex flex-col w-full p-3 bg-home-2 items-center bg-cover bg-no-repeat bg-center">
+      <div
+        className="flex flex-col w-full p-3 items-center bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: `url(${Background2})` }}
+      >
         <h1 className="w-full text-white font-bold text-4xl">
           10,000 free-thinking monkeys
         </h1>
@@ -42,18 +60,18 @@ function Home() {
         </div>
         <div className="w-full pt-20">
           <MultipleItems slide={4}>
-            <img className="pl-3" src="/image/slider/1.png" alt="" />
-            <img className="pl-3" src="/image/slider/2.png" alt="" />
-            <img className="pl-3" src="/image/slider/3.png" alt="" />
-            <img className="pl-3" src="/image/slider/4.png" alt="" />
-            <img className="pl-3" src="/image/slider/5.png" alt="" />
-            <img className="pl-3" src="/image/slider/6.png" alt="" />
+            <img className="pl-3" src={Slider1} alt="" />
+            <img className="pl-3" src={Slider2} alt="" />
+            <img className="pl-3" src={Slider3} alt="" />
+            <img className="pl-3" src={Slider4} alt="" />
+            <img className="pl-3" src={Slider5} alt="" />
+            <img className="pl-3" src={Slider6} alt="" />
           </MultipleItems>
         </div>
       </div>
       <div className="flex flex-col py-10 w-full p-3 bg-[#8E839B] items-center bg-cover bg-no-repeat bg-center">
         <h1 className="w-full text-white font-bold text-4xl">The Experience</h1>
-        <div className="w-full grid gap-20 grid-cols-2">
+        <div className="w-full grid gap-20 md:grid-cols-2 grid-cols-1 ">
           <div className="text-2xl font-bold text-white py-10">
             Ownership of a Mean Monkey provides access to an exciting media
             platform and stake in the advertisement revenue generated, in
@@ -68,15 +86,15 @@ function Home() {
             full commercial rights to their monkey and will receive a share of
             the advertisement revenue generated through the show.
           </div>
-          <img src="/image/4x/ai.png" alt="" />
+          <img src={Image4} alt="" />
         </div>
       </div>
       <div className="flex flex-col py-10 w-full p-3 bg-[#FFC0CB] items-center bg-cover bg-no-repeat bg-center">
         <h1 className="w-full text-white font-bold text-4xl">
           What is Decentralized Collaborative Media?
         </h1>
-        <div className="w-full grid gap-20 grid-cols-3">
-          <div className="text-2xl col-span-2 font-bold text-white py-10">
+        <div className="w-full grid gap-20 grid-cols-3 ">
+          <div className="text-2xl md:col-span-2 col-span-3 font-bold text-white py-10">
             Mean Monkeys are the very first embodiment of a decentralized
             collaborative media platform. Ownership of a monkey NFT grants the
             opportunity to participate in the social feed, talk show, and the
@@ -88,7 +106,7 @@ function Home() {
             show receive a share of advertisement revenue distributed
             programmatically via smart contracts.
           </div>
-          <img src="/image/4x/media.png" alt="" />
+          <img src={Image5} alt=""  className=" md:col-span-1 col-span-3"/>
           <div className="col-span-3">
             <p className="italic text-2xl text-white">To recap,</p>
             <p className="italic text-2xl text-white tracking-wide pt-4">
@@ -102,7 +120,7 @@ function Home() {
         <h1 className="w-full text-white font-bold text-4xl">
           Concept and Rarity{" "}
         </h1>
-        <div className="w-full grid gap-20 grid-cols-2">
+        <div className="w-full grid gap-20 md:grid-cols-2 grid-cols-1">
           <div className=" py-10 text-white">
             <p className="text-2xl font-bold">
               Each mean monkey is one of one, but some are more distinguished
@@ -125,7 +143,7 @@ function Home() {
               <p className="text-3xl italic">Hats: 40</p>
             </div>
           </div>
-          <img src="/image/4x/concept.png" alt="" />
+          <img src={Image6} alt="" />
         </div>
       </div>
       <div className="flex flex-col py-10 w-full p-3 bg-[#888E6C] items-center bg-cover bg-no-repeat bg-center">
@@ -144,7 +162,7 @@ function Home() {
               notion of creative, collaborative, and equitable expression.
             </p>
           </div>
-          <img src="/image/4x/road.png" alt="" />
+          <img src={Image7} alt="" />
         </div>
       </div>
       <div className="flex flex-col py-10 w-full p-3 bg-[#ED9920] items-center bg-cover bg-no-repeat bg-center">
@@ -152,7 +170,7 @@ function Home() {
           Barrier to Entry{" "}
         </h1>
         <div className="w-full grid grid-cols-5 gap-20">
-          <div className="col-span-3 py-14 text-white">
+          <div className="md:col-span-3 col-span-5 py-14 text-white">
             <p className="text-2xl font-bold">
               Each Mean Monkey is a 512 x 512 unique digital collectible,
               algorithmically generated and stored on the Ethereum blockchain.
@@ -172,7 +190,7 @@ function Home() {
               a manner hitherto unknown.”
             </p>
           </div>
-          <img src="/image/4x/rocket.png" className="col-span-2" alt="" />
+          <img src={Image8} className="md:col-span-2 col-span-5" alt="" />
         </div>
       </div>
       <Team />

@@ -4,12 +4,15 @@ import Home from "./Page/Home";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HomePage from "./Page/HomePage";
+import Artbandar from "./Page/Artbandar";
+
 import Main from "./Component/CommingSoon";
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<HomePage />} path="/cupid" />
+        <Route element={<Artbandar />} path="/artbandar" />
         <Route element={<Home />} path="/" />
         <Route element={<Main styles="min-h-[80vh]" />} path="/commingsoon" />
       </Routes>

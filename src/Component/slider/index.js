@@ -1,16 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 
-export default class MultipleItems extends Component {
-  render() {
-    const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: this.props.slide,
-      slidesToScroll: 1,
-      arrows: false,
-    };
-    return <Slider {...settings}>{this.props?.children}</Slider>;
-  }
+export default function MultipleItems({ children, slide }) {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: slide,
+    slidesToScroll: 1,
+    arrows: false,
+  };
+
+  return <Slider {...settings}>{children}</Slider>;
 }
