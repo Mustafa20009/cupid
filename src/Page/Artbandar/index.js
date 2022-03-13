@@ -18,7 +18,7 @@ function Artbandar() {
         <div className="h-[35vh] bg-[#61D7FF] text-center flex flex-col items-center font-bold ">
           <p className="text-3xl mt-5 text-black">COMMING MARCH 2022</p>
           <p className="text-3xl text-[#0D60D8] mt-5">0/1961 minted</p>
-          <button className="bg-[#0D60D8] pt-3 pb-3 w-[20%] rounded-full text-2xl mt-5">
+          <button className="bg-[#0D60D8] pt-3 pb-3 w-[300px] rounded-full text-2xl mt-5">
             Connect Wallet
           </button>
         </div>
