@@ -20,7 +20,7 @@ function HomePage() {
         for whitelist members, and unsold whitelist spots will move to the public sale.
         "
           color="white"
-          styleforFirstDiv={"order-2 pl-20 "}
+          styleforFirstDiv={"order-2 md:pl-20 pl-1 "}
           textWidth={"w-full"}
           styleForSecondDiv={"order-1"}
         />
@@ -36,14 +36,14 @@ function HomePage() {
         and reducing the pressure from a real-life blind date.  "
         />
         <About
-          headerStyle="text-right"
+          headerStyle="md:text-right text-left "
           header="$LUV Token"
           detail="Description: Each Cupid Club NFT holder receives daily airdrops of $LUV tokens.
          User can spend our virtual currency “$LUV” to upgrade their avatar or within 
         the experiences created by the community developers. $LUV token can also be
          used to pay subscription fees to the platform, as can Ethereum. "
           color="white"
-          styleforFirstDiv={"order-2 pl-20 "}
+          styleforFirstDiv={"order-2 md:pl-20 pl-1 "}
           textWidth={"w-full"}
           styleForSecondDiv={"order-1"}
         />

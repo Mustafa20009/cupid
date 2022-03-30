@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../../Component/navbar";
-import Logo from "../../assets/final logo white-01.png";
+// import Logo from "../../assets/final logo white-01.png";
 
 import MultipleItems from "../../Component/slider";
 
 function Artbandar() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Navbar image={Logo} imageStyle="mx-auto" />
+    <div className="min-h-screen bg-black text-white ">
+      <Navbar imageStyle="mx-auto" />
       <div className="grid grid-cols-12">
         <div className="col-span-11 text-center font-semibold text-lg tracking-wider">
           Merging Physical Art with NFT Tecnology ,Own Stake With future of art

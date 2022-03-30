@@ -2,7 +2,7 @@ import React from "react";
 
 const RoadMap = () => {
   return (
-    <div className="bg-[#FFC4E2] p-16 font-bold  ">
+    <div className="bg-[#FFC4E2] md:p-16 p-5 font-bold  ">
       <div className="container mx-auto  ">
         <h1 className="text-5xl font-bold text-primary">Roadmap</h1>
         <p className="pt-10 font-bold text-lg">
